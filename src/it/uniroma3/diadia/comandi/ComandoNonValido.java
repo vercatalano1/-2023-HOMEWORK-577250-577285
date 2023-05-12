@@ -26,7 +26,7 @@ public class ComandoNonValido implements Comando {
 	}
 
 	@Override
-	public void setIO(IO io) {
+	public void setIo(IO io) {
 		this.io = io;
 	}
 

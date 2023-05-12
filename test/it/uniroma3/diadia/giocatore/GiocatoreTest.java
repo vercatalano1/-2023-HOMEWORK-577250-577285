@@ -1,42 +1,27 @@
 package it.uniroma3.diadia.giocatore;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.junit.Before;
+
+import it.uniroma3.diadia.giocatore.Giocatore;
 
 public class GiocatoreTest {
-	Giocatore g1=new Giocatore();
-	Giocatore g2=new Giocatore();
-	Giocatore g3=new Giocatore();
-	    
 	
-	@Before
-	public void initMethod() {
-		g1.setCfu(20);
-		g3.setCfu(0);
+	Giocatore g = new Giocatore();
+	
+	@Test
+	public void testGetCfuDefault() {
+		assertEquals(20, g.getCfu());
+	}
+	
+	@Test
+	public void testSetCfu() {
+		g.setCfu(3);
+		assertEquals(3, g.getCfu());
 	}
 
-
 	@Test
-	public void testCfuIniziali() {
-           assertEquals("il valore di cfu coincide", 20, g1.getCfu());
+	public void testGetBorsaDefault() {
+		assertNotNull(g.getBorsa());
 	}
-    
-	@Test
-	public void testCfuDiversi() {
-		   assertNotEquals("non sono gli stessi valori", 5, g2.getCfu());
-	}
-	
-	@Test
-	public void testCfuNulli() {
-		   assertEquals("non sono presenti cfu",0, g3.getCfu());
-	}
-	
-	@Test
-	public void testBorsa() {
-		   assertNotNull(g1.getBorsa());
-	}
-	
-	
 }

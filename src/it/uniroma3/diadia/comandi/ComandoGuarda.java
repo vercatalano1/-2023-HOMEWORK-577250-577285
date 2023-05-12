@@ -14,7 +14,7 @@ public class ComandoGuarda implements Comando {
 		io.mostraMessaggio(partita.getStanzaCorrente().getDescrizione());
 		io.mostraMessaggio("Hai ancora: "+partita.getGiocatore().getCfu()+ "CFU");
 		io.mostraMessaggio(partita.getGiocatore().getBorsa().toString());
-		
+
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class ComandoGuarda implements Comando {
 
 
 	@Override
-	public void setIO(IO io) {
+	public void setIo(IO io) {
 		this.io = io;
 	}
 
