@@ -17,6 +17,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import it.uniroma3.diadia.attrezzi.Attrezzo;
+import it.uniroma3.diadia.giocatore.ComparatoreAttrezziPerPeso;
 
 public class BorsaTest {
 
